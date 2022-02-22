@@ -93,19 +93,6 @@ a {
   margin-right: 0;
 }
 
-.contact-list {
-  display: flex;
-  margin-left: auto;
-}
-
-.contact-item {
-  margin-right: 50px;
-}
-
-.contact-item:last-child {
-  margin-right: 0;
-}
-
 /* color-text */
 .nav-link {
   color: var(--main-text);
@@ -118,6 +105,36 @@ a {
   color: var(--blue-hover);
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--blue-hover);
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  align-items: baseline;
+}
+
+.contact-item {
+  margin-right: 50px;
+}
+
+.contact-item:last-child {
+  margin-right: 0;
+}
+
+.mail-icon {
+  fill: var(--gray-text);
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.mail-icon:hover {
+  fill: var(--blue-hover);
+}
+
 .contact-link {
   color: var(--gray-text);
   font-weight: 500;
@@ -125,14 +142,20 @@ a {
   letter-spacing: 0.02em;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--blue-hover);
-}
-
 .contact-link:hover,
 .contact-link:focus {
   color: var(--blue-hover);
+}
+
+.phone-icon {
+  fill: var(--gray-text);
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.phone-icon:hover {
+  fill: var(--blue-hover);
 }
 
 /* Hero */
@@ -142,6 +165,12 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/background-hero.jpg);
 }
 
 .hero-title {
@@ -188,6 +217,20 @@ a {
 
 .content-item:last-child {
   margin-right: 0;
+}
+
+.box-icon {
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+.icon-special {
+  width: 70px;
+  height: 70px;
 }
 
 /* color-text */
@@ -279,6 +322,7 @@ a {
   color: var(--gray-text);
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 28px;
 }
 
 /* footer */
@@ -287,6 +331,18 @@ a {
   background-color: var(--dark-background);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.background-link {
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+}
+
+.social-media {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
 }
 
 .footer-link {
