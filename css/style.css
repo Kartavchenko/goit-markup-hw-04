@@ -348,6 +348,38 @@ a {
   fill: var(--white-theme);
 }
 
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: auto;
+}
+
+.company-svg {
+  fill: #afb1b8;
+}
+
+.company-link:hover,
+.company-link:focus {
+  border-color: var(--blue-hover);
+}
+
+.company-link:hover .company-svg,
+.company-link:focus .company-svg {
+  fill: var(--blue-hover);
+}
+
 /*  */
 
 /* footer */
