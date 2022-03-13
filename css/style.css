@@ -150,16 +150,16 @@ a {
 /* Hero */
 /* color-text */
 .hero {
-  background-color: var(--dark-background);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(/images/background-hero.jpg);
+  background-color: var(--dark-background);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -201,7 +201,6 @@ a {
 
 .content-item {
   margin-right: 30px;
-  width: 270px;
 }
 
 .content-item:last-child {
@@ -209,11 +208,12 @@ a {
 }
 
 .box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f5f4fa;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
 }
 
